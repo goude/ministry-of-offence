@@ -1,0 +1,6 @@
+IMG := "~/Downloads/min-off-logo.png"
+
+minify-the-gpt-image:
+  cp {{IMG}} orig_logo.png
+  pngquant --strip --speed 1 --quality=85-100 --force --ext .png 8 orig_logo.png
+  oxipng -o max --strip all orig_logo.png
