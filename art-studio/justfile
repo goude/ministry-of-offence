@@ -7,4 +7,4 @@ minify-the-gpt-image:
 
 bake-the-seal:
   cp ministry-of-offence-seal.svg ministry-of-offence-seal-baked.svg
-  inkscape --batch-process ministry-of-offence-seal-baked.svg --actions=\"EditSelectAll;ObjectToPath;ObjectStrokeToPath;FileSave;FileClose\"
+  /Applications/Inkscape.app/Contents/MacOS/inkscape --batch-process ministry-of-offence-seal-baked.svg --actions="EditSelectAll;ObjectToPath;ObjectStrokeToPath;FileSave;FileClose"
