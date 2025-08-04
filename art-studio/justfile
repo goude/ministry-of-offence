@@ -4,3 +4,7 @@ minify-the-gpt-image:
   cp {{IMG}} orig_logo.png
   pngquant --strip --speed 1 --quality=85-100 --force --ext .png 8 orig_logo.png
   oxipng -o max --strip all orig_logo.png
+
+bake-the‑seal:
+  cp ministry-of-offence-seal.svg ministry-of-offence-seal-baked.svg
+  inkscape --batch-process ministry-of-offence-seal-baked.svg --actions=\"EditSelectAll;ObjectToPath;ObjectStrokeToPath;FileSave;FileClose\"
